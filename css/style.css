@@ -1,0 +1,87 @@
+/********** GENERAL **********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    text-align: center;
+    background-color: #197dff5b;
+}
+section{
+    margin: 20px;
+}
+
+/********** MAIN **********/
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Users Section */
+.user-section .user,
+.user-section .details{
+    margin: 10px;
+    padding: 10px;
+    border:1px solid #000;
+}
+.user-section .user{
+    position: relative;
+}
+.user-section .details{
+    display: none;
+    position: absolute;
+    top: -11px;
+    left: 100%;
+    width: 250px;
+}
+.user-section .user:hover{
+    background-color: rgba(13, 217, 119, 0.5);
+}
+.user-section .user:hover .details{
+    display: block;
+}
+
+/* Products Section */
+.products-section{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-section .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+.products-section .card.clothing{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.products-section .card.food{
+    background-color: rgba(13, 217, 119, 0.5);
+}
+
+/* Legend */
+.legend .legend-item{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.legend .square{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+.legend .square.green{
+    background-color: rgba(13, 217, 119, 0.5);
+}
+.legend .square.red{
+    background-color: rgba(255, 0, 0, 0.5);
+}
